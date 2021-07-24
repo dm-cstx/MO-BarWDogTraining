@@ -1,0 +1,201 @@
+[
+    {
+        "key": "group_606061eb6138e",
+        "title": "Event- Gig",
+        "fields": [
+            {
+                "key": "field_606069105c1e8",
+                "label": "Name of Event",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Enter the name of your event above in the \"Add title\" field.\r\n<i>This will also become the ending of the website address after \/events\/ . \r\nSuch as michaelkellysmusic.com\/events\/open-mic-friday .<\/i>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_606067ae4ef1b",
+                "label": "Featured Image",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Add a photo in the Featured Image section on the right of this page.\r\n<i>Hint: if you don't see a column to the right of this screen press the cog icon at the top right of this page to show the panel.<\/i>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_606061f572f0e",
+                "label": "Name of Location",
+                "name": "name_of_location",
+                "type": "text",
+                "instructions": "Add the name of the venue where your event will take place.  This will appear on the front page and the event page along with the city, state, and zip code.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Cherrity Bar",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6060620672f0f",
+                "label": "Street Address",
+                "name": "street_address",
+                "type": "text",
+                "instructions": "Input the <i>street address<\/i> for the event.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "123 Main St",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6060621572f10",
+                "label": "City, State, and Zip Code",
+                "name": "city_state_and_zip_code",
+                "type": "text",
+                "instructions": "Enter the city, state, and zip code.\r\n<i>This will be used by Google Maps to help your fans find your event.<\/i>",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6060628072f11",
+                "label": "Event Date",
+                "name": "event_date",
+                "type": "date_picker",
+                "instructions": "Use the date picker to input the event date.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "F j, Y",
+                "return_format": "F j, Y",
+                "first_day": 1
+            },
+            {
+                "key": "field_606062ad72f12",
+                "label": "Event Begin Time",
+                "name": "event_begin_time",
+                "type": "time_picker",
+                "instructions": "Choose the start time for the event.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "g:i a",
+                "return_format": "g:i a"
+            },
+            {
+                "key": "field_606062c572f13",
+                "label": "Event End Time",
+                "name": "event_end_time",
+                "type": "time_picker",
+                "instructions": "Choose the ending time for the event.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "display_format": "g:i a",
+                "return_format": "g:i a"
+            },
+            {
+                "key": "field_60606e68d7d2f",
+                "label": "Additional Details",
+                "name": "additional_details",
+                "type": "wysiwyg",
+                "instructions": "Type in any additional details you want your fans to know.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "text",
+                "media_upload": 0,
+                "toolbar": "full",
+                "delay": 0
+            },
+            {
+                "key": "field_60606acc40347",
+                "label": "Preview and Publish",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"font-size: 14px; color: white; background-color: #27817f; padding: 10px; border-radius: 5px;\">Review your post by clicking the <strong>Preview<\/strong> button at the top right.  Check out your post to be sure you are happy with the results, then come back to this page and click <strong>Publish<\/strong>. <\/br><\/br> <h4 style=\"color: #523f6d\">- The Morning Owls Team<\/h4><\/br>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "event"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

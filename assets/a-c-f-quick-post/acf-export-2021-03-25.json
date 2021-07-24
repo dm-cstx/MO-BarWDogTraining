@@ -1,0 +1,68 @@
+[
+    {
+        "key": "group_604ca6d05bdc4",
+        "title": "Quick Post",
+        "fields": [
+            {
+                "key": "field_604ca7234898f",
+                "label": "Quick Post Image",
+                "name": "quick_post_image",
+                "type": "image",
+                "instructions": "Want to make a quick post and know that it will look great instantly? Input the fields below, add the same image to the 'Featured Image' to the right, and Publish; Morning Owls will take care of all the post formatting. Then head over to the Blog2Social tab and share your post instantly with FB, Instagram, and other social media outlets. You can add more content above but the formatting will be up to you. Also, the additional content will appear after the Quick Post.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_604ca8ee48990",
+                "label": "Quick Post Text",
+                "name": "quick_post_text",
+                "type": "textarea",
+                "instructions": "Your quick message goes here; then copy the same message and place in the Excerpt field to the right before Publishing. Don't forget to change the Category on the right if the default category doesn't fit.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
