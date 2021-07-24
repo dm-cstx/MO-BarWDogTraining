@@ -47,42 +47,117 @@ Post Types
 
 function client_post_types() {
 		//change 'event' to represent clients post type intent- don't forget dashicon and other attributes
-  register_post_type('event', array(
+  register_post_type('services', array(
     'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-	'show_in_rest' => true,
-    'rewrite' => array('slug' => 'events'),
+    'show_in_rest' => true,
+    'rewrite' => array('slug' => 'services'),
     'has_archive' => true,
     'public' => true,
     'labels' => array(
-      'name' => 'Events',
-      'add_new_item' => 'Add New Event',
-      'edit_item' => 'Edit Event',
-      'all_items' => 'All Events',
-      'singular_name' => 'Event'
+      'name' => 'Services',
+      'add_new_item' => 'Add New Service',
+      'edit_item' => 'Edit Service',
+      'all_items' => 'All Services',
+      'singular_name' => 'Service'
     ),
-    'menu_icon' => 'dashicons-calendar'
+    'menu_icon' => 'dashicons-pets'
   ));
 
-  register_post_type('product', array(
-    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-	  'show_in_rest' => true,
-    'rewrite' => array('slug' => 'products'),
-    'has_archive' => true,
-    'public' => true,
-    'labels' => array(
-      'name' => 'Products',
-      'add_new_item' => 'Add New Product',
-      'edit_item' => 'Edit Product',
-      'all_items' => 'All Products',
-      'singular_name' => 'Product'
-    ),
-    'menu_icon' => 'dashicons-universal-access'
-  ));
 // If Change the name of post type 'product' see Product Order By below
 
 }
 
 add_action('init', 'client_post_types');
+
+/*
+====================================================
+Create Categories for Services 
+====================================================
+*/
+function add_custom_taxonomies() {
+  register_taxonomy( 'service_type', 'services', array(
+    'hierarchical' => true,
+    'show_in_rest' => true,
+    'labels' => array(
+      'name' => _x( 'Type of Service', 'taxonomy general name' ),
+      'singular_name' => _x( 'Service Type', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Service Types' ),
+      'all_items' => __( 'All Service Types' ),
+      'parent_item' => __( 'Parent Service Type' ),
+      'parent_item_colon' => __( 'Parent Service Type:' ),
+      'edit_item' => __( 'Edit Service Type' ),
+      'update_item' => __( 'Update Service Type' ),
+      'add_new_item' => __( 'Add New Service Type' ),
+      'new_item_name' => __( 'New Service Type Name' ),
+      'menu_name' => __( 'Service Types' ),
+    ),
+    'rewrite' => array(
+      'slug' => 'service_type',
+      'with_front' => false,
+      'hierarchical' => true
+    )
+    ) );
+
+  register_taxonomy( 'service_category', 'services', array(
+    'hierarchical' => true,
+    'show_in_rest' => true,
+    'labels' => array(
+      'name' => _x( 'Service Category', 'taxonomy general name' ),
+      'singular_name' => _x( 'Service Category', 'taxonomy singular name' ),
+      'search_items' =>  __( 'Search Service Categories' ),
+      'all_items' => __( 'All Service Categories' ),
+      'parent_item' => __( 'Parent Service Category' ),
+      'parent_item_colon' => __( 'Parent Service Category:' ),
+      'edit_item' => __( 'Edit Service Category' ),
+      'update_item' => __( 'Update Service Category' ),
+      'add_new_item' => __( 'Add New Service Category' ),
+      'new_item_name' => __( 'New Service Category Name' ),
+      'menu_name' => __( 'Service Categories' ),
+    ),
+    'rewrite' => array(
+      'slug' => 'service_category',
+      'with_front' => false,
+      'hierarchical' => true
+    )
+    ) );
+
+
+  }
+add_action('init', 'add_custom_taxonomies', 0);
+
+/* Add columns to Custom Post Type List Page */
+function set_custom_edit_services_columns($columns) {
+
+  $columns['service_type'] = __( 'Service Type', 'your_text_domain' );
+  $columns['service_category'] = __( 'Service Category', 'your_text_domain' );
+
+    return $columns;
+}
+
+function custom_services_column( $column, $post_id ) {
+    switch ( $column ) {
+
+        case 'service_type' :
+          $terms = get_the_term_list( $post_id , 'service_type' , '' , ',' , '' );
+          if ( is_string( $terms ) )
+              echo $terms;
+          else
+              _e( ' ', 'your_text_domain' );
+          break;
+
+        case 'service_category' :
+          $terms = get_the_term_list( $post_id , 'service_category' , '' , ',' , '' );
+          if ( is_string( $terms ) )
+              echo $terms;
+          else
+              _e( ' ', 'your_text_domain' );
+          break;
+
+    }
+}
+
+add_filter( 'manage_services_posts_columns', 'set_custom_edit_services_columns' );
+add_action( 'manage_services_posts_custom_column' , 'custom_services_column', 10, 2 );
 
 /*
 ====================================================
@@ -164,8 +239,8 @@ function wpse_custom_menu_order ( $menu_ord) {
     'index.php', // Dashboard
     'separator1', // First separator
     'edit.php', // Posts
+    'edit.php?post_type=services', // Services
     'edit.php?post_type=page', // Pages
-    'edit.php?post_type=event', // Events
     'upload.php', // Media
     'edit-comments.php', // Comments
     'link-manager.php', // Links
@@ -192,13 +267,13 @@ Custom CSS
 add_action('admin_head', 'my_custom_css_do');
 function my_custom_css_do() {
 echo '<style>
-//#adminmenu li#menu-posts {display:none;}
-//#adminmenu li#menu-comments {display:none;}
+#adminmenu li#menu-posts {display:none;}
+#adminmenu li#menu-comments {display:none;}
 //#adminmenu li#menu-pages {display:none;}
 //#adminmenu li#toplevel_page_members  {display:none;}
 //#adminmenu li#toplevel_page_wpforms-overview {display:none;}
 //#adminmenu li#toplevel_page_cmp-settings {display:none;}
-//#adminmenu li#toplevel_page_smush {display:none;}
+#adminmenu li#toplevel_page_smush {display:none;}
 //#adminmenu li#toplevel_page_members  {display:none;}
 //#wpadminbar li#wp-admin-bar-updraft_admin_node {display:none;}
 //#adminmenu li#toplevel_page_edit-post_type-acf-field-group {display:none;}
