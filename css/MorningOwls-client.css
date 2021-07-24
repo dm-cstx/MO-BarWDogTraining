@@ -78,7 +78,7 @@ pre {
 /* Links
    ========================================================================== */
 a {
-    background-color: transparent;
+  background-color: transparent;
 	color: #4d3160;
 	font-weight: bold;
 	text-decoration: none;
@@ -279,45 +279,9 @@ textarea { overflow: auto; }
 /* HEADER
    ========================================================================== */
 
-/* IF HAS BLOG - FRONT PAGE ANNOUNCEMENT  */
-#fp-announcement {
-  background-color: #8798ad;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-#fp-announcement h2 {
-  font-family: The Artisan Script;
-  font-weight: bold;
-  padding: 20px 0;
-}
-
-#tra-img img { box-shadow: 3px 3px 3px #1c1e26; }
-.fp-announcements p { font-size: 1.25rem; }
-
-.catch-announce {
-  margin-top: 15px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  padding: 5px 15px;
-  color: #333;
-}
-
-.catch-announce:hover {
-  background-color: #373f48;
-  color: white;
-}
 
 /* FRONT PAGE PANEL 1
    ========================================================================== */
-
-/* IF HAS EVENTS - FRONT PAGE EVENTS  */
-.frpg-events {
-  background-color: #5d6979;
-  text-align: center;
-}
-
-/* REMAINDER: mimics events page */
 
 
 
@@ -337,57 +301,6 @@ textarea { overflow: auto; }
    ========================================================================== */
 
 
-/* INDEX
-   ========================================================================== */
-
-#blpg-comp {}
-
-.norm-post-side {
-	display: flex;
-	flex-direction: row;
-}
-
-.left {
-	flex: 73%;
-	padding-right: 20px;
-}
-
-#post-item {
-	display: flex;
-	flex-direction: row;
-}
-
-.post-thumb {
-	width: 25%;
-	height: 35%;
-	margin: 2% 2% auto auto;
-	min-width: 200px;
-}
-
-.post-content {
-	width: 75%;
-	margin: auto auto auto 5%;
-}
-
-.blog-post-title {}
-
-.metabox a {}
-
-.metabox a:hover {}
-
-.generic-post-content {
-	margin-bottom: 10px;
-	min-width: 300px;
-}
-
-.blog-contin {
-	padding: 5px 10px 5px 10px;
-	border: 2px solid black;
-	border-radius: 5px;
-	transition: 0.2s;
-}
-
-.blog-contin:hover {}
 
 /* SHARE TEMPLATE
    ========================================================================== */
@@ -483,126 +396,19 @@ textarea { overflow: auto; }
 
 
 
-/* SIDEBAR
-   ========================================================================== */
-
-.cats {}
-
-.right {
-	flex: 25%;
-	padding-left: 10px;
-}
-
-#sidebar-content {
-  width: 250px;
-	background-color: white; 
-	float: right;
-}
-
-#sidebar-content .side-title h2{
-	text-align: center;
-	font-size: 1.75em;
-	padding-bottom: 5px;
-}
-
-#sidebar-content .side-note h3 {
-	text-align: center;
-	font-size: 1.4em;
-	color: #333333;
-	padding-bottom: 5px;
-}
-
-#sidebar-content ul li {
-	list-style-type: none;
-	padding: 2px 0;
-	font-size: 1.25rem;
-}
-
-ul.side-list { margin-left: -10%; }
-
-.cat-title {
-	text-align: center;
-	font-size: 1.5em;
-	padding-bottom: 5px;
-}
-
-li.categories { padding-left: 15%; }
-li.cat-item a { color: #089abe; }
-
-li.cat-item a:hover {
-	color: #aa1f2e;
-	text-decoration: none;
-}
-
 /* PAGE
    ========================================================================== */
 
 #page-comp {}
 
 
-
-/* SINGLE
+/* Services PAGE / ARCHIVE Services
    ========================================================================== */
 
-#sing-comp,
-#prod-comp,
-#page-comp,
-#event-comp {
-  padding-bottom: 30px;
-  padding-top: 3%;
-}
 
-.sing-pg-hdr { margin-left: -15px; }
-.quickie { text-align: center; }
-
-.quickie img {
-  max-width: 300px;
-  padding: 20px 0;
-}
-
-.relate-post {
-	margin: auto;
-	text-align: center;
-	height: 240px;
-}
-
-.relate-post img { padding-bottom: 5px; }
-.comment-body { text-align: left; }
-.comment-form-comment label { display: block; }
-.blog-comment { text-align: center; }
-.index-flex .hr-sidebar-sep { display: none; }
-
-
-/* PRODUCT PAGE / ARCHIVE PRODUCT
-   ========================================================================== */
-#archProduct-page .products { margin-bottom: 30px; }
-
-#archProduct-page .main-btn {
-	font-size: 110%;
-	padding: 7px 18px;
-}
-
-/* PRODUCT- SINGLE
+/* Single- Services
    ========================================================================== */
 
-.product-side {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-bottom: 80px;
-}
-
-.product-side h1.page-header { margin-top: 40px; }
-.product-side a.main-btn { font-size: 90%; }
-.inquire-prod { padding-top: 40px; }
-#product-share { padding-top: 30px; }
 
 /* product-carousel */
 .carousel-inner img { width: 100%; }
@@ -622,22 +428,6 @@ li.cat-item a:hover {
 #myCarousel .carousel-indicators li.active img { opacity: 1; }
 #myCarousel .carousel-indicators li:hover img { opacity: 0.75; }
 
-/* product-tab */
-#product-tab {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto auto 70px auto;
-}
-
-#product-tab li .active { border-bottom: 2px solid #e995a1; }
-
-#product-tab li {
-  padding: 10px;
-  margin-right: 10px;
-}
-
-#product-tab .tab-content { padding-top: 20px; }
-
 /* prod-reviews */
 
 .prod-reviews {
@@ -648,138 +438,6 @@ li.cat-item a:hover {
 }
 
 .prod-review-img { width: 50%; }
-
-
-/* EVENTS PAGE / ARCHIVE EVENTS
-   ========================================================================== */
-.all-events-page {
-  max-width: 1200px;
-  margin-top: 50px;
-}
-
-.event-posting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  max-height: 240px;
-  border-top: 1px solid cornsilk;
-  border-bottom: 1px solid cornsilk;
-  padding: 20px 0;
-  max-width: 500px;
-  margin: 50px auto;
-}
-
-.event-posting:hover {
-  border-top: 3px solid cornsilk;
-  border-bottom: 3px solid cornsilk;
-  max-height: 246px;
-  margin-top: 47px;
-  margin-bottom: 47px;
-}
-
-.event-page-date {
-  height: 125px;
-  border-radius: 50%;
-  max-height: 125px;
-  width: 100px;
-  color: cornsilk;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.event-date-inset {
-  background-color: #fff8dc;
-  border-radius: 50%;
-  color: #373f48;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 105px;
-  border: 5px solid #373f48;
-  height: 105px;
-  padding: 5px 0;
-  margin: 15% auto;
-}
-
-.event-details {
-  text-align: center;
-  font-size: 90%;
-}
-
-.event-details h2 { font-size: 1.75rem;}
-.event-details h4 { font-size: 1.2rem; }
-.event-details a { color: cornsilk; }
-
-.event-more {
-  display: inline-block;
-  margin-top: 25px;
-  background-color: #5d6979;
-  padding: 5px 15px;
-  border: 1px solid cornsilk;
-  border-radius: 5px;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.event-more:hover { background-color: #373f48; }
-
-
-/* EVENT SINGLE
-   ========================================================================== */
-.event-single .container {
-  max-width: 800px;
-  color: #16262e;
-  margin: 50px auto 20px auto;
-  /*background-color: #9ea5af;*/
-  padding-bottom: 15px;
-  /*box-shadow: 1px 1px 5px black;*/
-  border-top: 2px solid cornsilk;
-  border-bottom: 2px solid cornsilk;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.event-single h2 { color: cornsilk; }
-.event-single a { color: #16262e; }
-.event-single .row { padding-bottom: 15px; }
-
-.event-single img {
-  max-height: 300px;
-  width: auto;
-}
-
-.single-event-txt h2 {
-  font-family: 'The Artisan Script', Arial, Helvetica, sans-serif;
-}
-
-.single-event-txt a { 
-  text-decoration: underline;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.single-event-txt a:hover { color: cornsilk; }
-
-.single-details {
-  padding: 20px 50px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.single-details p {
-  color: #fff8dc;
-  margin-bottom: 0.5rem;
-  line-height: 120%;
-}
-
-.single-event-share { margin-bottom: 50px; }
 
 /* CATEGORY
    ========================================================================== */
