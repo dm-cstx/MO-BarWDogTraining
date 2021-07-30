@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div id="frpg-comp" class="content-area" >
-
+<div id="fphero"class="container-fluid">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Obedient.jpg" width="1920" height="900" alt="" >
+</div>
 <!-- IF HAS BLOG - FRONT PAGE ANNOUNCEMENT  -->
 <?php
     $homepageAnnouncement = new WP_Query(array (
