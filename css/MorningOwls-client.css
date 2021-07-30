@@ -488,13 +488,14 @@ textarea { overflow: auto; }
 
 /* FOOTER
    ========================================================================== */
-
-#main-footer {
-	padding: 40px 0 20px 0;
+#newsletter { 
+  padding: 2% 0; 
+  background-color: #ceb4cd;
 }
+.es-field-wrap {display: inline-block; margin-right: 10px;}
 
-#main-footer .ft-newsletter input[type="text"],
-#main-footer .ft-newsletter input[type="email"] {
+.newsletterForm input[type="text"],
+.newsletterForm input[type="email"] {
   border-radius: 3px;
   color: #333;
   border-style: none;
@@ -505,12 +506,23 @@ textarea { overflow: auto; }
   margin-top: 8px;
 }
 
-#main-footer .ft-newsletter input[type="submit"] {
-  background-color: #5aa167;
+.newsletterForm input[type="submit"] {
+  background-color: #736272;
   border-radius: 3px;
   color: white;
   border-style: none;
   padding: 10px 15px;
+}
+
+#main-footer {
+	padding: 40px 0 20px 0;
+  background-color: #3f523e;
+  color: white;
+}
+
+.footRight a {
+  font-size: 3rem;
+  color: white;
 }
 
 #ft-endnotes {
