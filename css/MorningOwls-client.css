@@ -402,15 +402,33 @@ textarea { overflow: auto; }
 /* PAGE
    ========================================================================== */
 
-#page-comp {}
+.serviceRowLeft,
+.serviceRowRight {
+  width: 90%;
+  margin: auto;
+  padding: 3% 0;
+}
+
+.servicesImg {
+    margin-bottom: 30px;
+  }
+
+#servicesPage img {
+  max-width: auto;
+  height: 450px;
+}
 
 
-/* Services PAGE / ARCHIVE Services
+
+
+/* Services PAGE / Taxonomy Services
    ========================================================================== */
+  
 
 
 /* Single- Services
    ========================================================================== */
+
 
 
 /* product-carousel */
