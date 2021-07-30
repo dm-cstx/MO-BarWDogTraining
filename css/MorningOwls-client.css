@@ -279,8 +279,16 @@ textarea { overflow: auto; }
 
 /* HEADER
    ========================================================================== */
+header .row {
+  width: 100%;
+}
+.logo {
+  padding-left: 15%;
+}
 
-
+.navmenu {
+  padding-right: 15%;
+}
 /* FRONT PAGE PANEL 1
    ========================================================================== */
 #fphero {
