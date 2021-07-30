@@ -1,195 +1,23 @@
-
-@media(min-width: 576px) {
- /* Contact Page */
-	.contact-form {
-		padding-left: 15%;
-		padding-right: 15%;
-	}  
-
-     /* Footer */
-	.footer-logo { width: 120px; }
-	#footer-social { padding-top: 30px; }
-
-	}
-
-@media(min-width: 768px) {
- /* Contact Page */
-	.contact-form {
-		padding-left: 20%;
-		padding-right: 20%;
-	}
+@media (min-width: 576px) {
 
 }
 
-@media(min-width: 992px) {
- /* Contact Page */
-	.contact-form {
-		padding-left: 25%;
-		padding-right: 25%;
-	}
-  /* Footer */
-	#main-footer .socials { display: none; }
-
-}
-
-@media(min-width: 1200px) {
-   /* Contact Page */
-	.contact-form {
-		padding-left: 30%;
-		padding-right: 30%;
-	}
-
-}
-
-@media(min-width: 1400px) {
-   /* Contact Page */
-	.contact-form {
-		padding-left: 35%;
-		padding-right: 35%;
-	}
-}
-
-@media(max-width: 991.9px) {
-   /* Footer */
-	#footer-social { display: none; }
-
-}
-
-@media(max-width: 575.98px) {
- /* Contact Page */
-	.contact-info h4 { font-size: 1.1rem; }
-
-	.contact-form {
-		padding-left: 15%;
-		padding-right: 15%;
-	}  
-  /* Footer */
-	#main-footer .col-lg-4 { margin-bottom: 30px; }
-
-}
-
-@media (max-width: 300px ) {
-	.contact-info h4 { font-size: .9rem; }  
+@media (min-width: 768px) {
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-	#sidebar-content {
-		float:none;
-	   	margin: auto;
-   }
-}
-
-@media (max-width: 992px) {
-	.norm-post-side {
-		flex-direction: column;
-	}
-
-	.footer-row {
-		flex-wrap: wrap;
-	}
-
-	.foot-contact {
-		flex:50%;
-	}
-
-	.foot-em {
-		flex: 50%;
-	}
+@media (min-width: 992px) {
 	
-	#foot-soc {
-		padding-top: 30px;
-	}
 }
 
-@media (max-width: 768px) {
-	.post-item {
-		flex-direction: column;
-		padding-top: 20px;
-	}
-
-	.post-thumb {
-		width: 50%;
-		height: 35%;
-		margin: auto;
-	}
-
-	.post-content {
-		margin: auto;
-		width: 80%;
-		padding-top: 20px;
-		text-align:center;
-	}
-
-	.relate-post {
-		font-size: .9em;
-		height: auto;
-		width: 100%;
-		padding-bottom: 5px;
-	}
+@media (min-width: 1200px) {
 	
-	.relate-post img {
-		width: 40%;
-		display: block;
-		margin: auto;
-		padding-bottom: 0;
-	}
 }
 
-@media (max-width: 576px) {
-	.post-thumb {
-		width: 60%;
-	}
-
-	.foot-contact {
-		flex:35%;
-		order: 2;
-		padding-top: 30px;
-	}
-
-	.foot-em {
-		flex: 75%;
-		order: 1;
-		text-align: center;
-	}
+@media (min-width: 1400px) {
+	
 }
 
-
-
+@media (max-width: 1400px) {
+	
+}
