@@ -19,6 +19,10 @@
 <!-- ATTN -->
 	  <meta name="description" content="DESCRIPTION of site including key words" >
     <link rel="shortcut icon" href="">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/Fav_logo_16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/Fav_logo_32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/Fav_logo_48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/Fav_logo_192.png" sizes="192x192">
     <link rel="canonical" href="">
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>"  >
     <link rel="pingback" href="<?php bloginfo( 'pingback_url'); ?>" >
@@ -45,28 +49,28 @@
 
   <body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col col-8">
-          <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" width="100" height="100" alt="" /></a>
-        </div>
-        <div class="col col-4 align-self-end">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-6">
+            <a class="navbar-brand logo" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" width="100" height="100" alt="" /></a>
+          </div>
+          <div class="d-flex col col-6 align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end navmenu" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </div>
             </div>
           </div>
-        </div>
-      </div> 
-    </div>
-  </nav>
+        </div> 
+      </div>
+    </nav>
 </header>
 
   
