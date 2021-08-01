@@ -53,7 +53,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col col-6">
-            <a class="navbar-brand logo" href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" width="100" height="100" alt="" /></a>
+            <a class="navbar-brand logo" href="<?php echo site_url('bar-w-dog-training') ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" width="100" height="100" alt="" /></a>
           </div>
           <div class="d-flex col col-6 align-items-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,10 +61,10 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end navmenu" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link" href="<?php echo site_url('/service_type/service/'); ?>" >Services</a>
                 <a class="nav-link" href="<?php echo site_url('/service_type/product/'); ?>">Products</a>
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="<?php echo site_url('/about/'); ?>">About</a>
+                <a class="nav-link" href="<?php echo site_url('/contact/'); ?>">Contact</a>
               </div>
             </div>
           </div>
