@@ -272,7 +272,11 @@ textarea { overflow: auto; }
 
 /* ========================================================================== */
 
-.page-header {}
+.page-header {
+  text-align:center;
+  font-weight: bold;
+  
+}
 
 .section-starter-hdr {}
 
@@ -410,7 +414,14 @@ header .row {
 /* PAGE
    ========================================================================== */
 
-.serviceRowLeft,
+
+
+
+
+
+/* Services PAGE / Taxonomy Service
+   ========================================================================== */
+  .serviceRowLeft,
 .serviceRowRight {
   width: 90%;
   margin: auto;
@@ -426,12 +437,39 @@ header .row {
   height: 450px;
 }
 
-
-
-
-/* Services PAGE / Taxonomy Services
+/* Product PAGE / Taxonomy Product
    ========================================================================== */
-  
+  .productListSidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .productRow {
+    padding: 3%;  
+    justify-content: center;  
+  }
+
+  .productCard {
+    margin: 0 20px 10px 0;
+    text-align: center;
+    width: 300px;
+  }
+
+  .productSidebar {
+    padding-top: 3%;
+    width: 300px;
+    text-align: center;
+  }
+
+  /* Sidebar */
+  #sidebar-content {
+    background-color: white;
+    padding: 3%;
+  }
+  .side-title {
+    margin-bottom: 15px;
+  }
 
 
 /* Single- Services
