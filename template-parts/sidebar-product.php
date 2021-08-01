@@ -4,7 +4,7 @@
 
     <div id="sidebar-content" class="p-3">
 		<div class="side-title">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt=""  width="200" height="200">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" alt=""  width="200" height="200">
 		</div>
 		<div class="side-note">
 			<p>

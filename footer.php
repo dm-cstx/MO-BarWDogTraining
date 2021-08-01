@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="ft-newsletter col-sm-6 col-md-6 col-lg-4 footCenter">
-                    <img src="/wp-content/themes/MO-BarWDogTraining/assets/img/BarWlogo.jpg" alt="Bar W Dog Training Logo" width="150" height="150">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.png" alt="Bar W Dog Training Logo" width="150" height="150">
                 </div>
 
                 <div class="col-lg-4 footRight">

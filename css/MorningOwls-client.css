@@ -414,8 +414,25 @@ header .row {
 /* PAGE
    ========================================================================== */
 
+/* About PAGE
+   ========================================================================== */
+.sectionStripe .row {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  justify-content: center;
+}
+.stripeImg img {
+  width: 300px;
+  height: auto;
+}
 
-
+#aboutPage {
+  background-color: #839386;
+}
+#training  {
+  background-color: #b5beb6;
+}
 
 
 
