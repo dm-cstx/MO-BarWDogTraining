@@ -322,7 +322,7 @@ header .row {
 
 #share-posts {
   width: 80%;
-  margin-left: 10%;
+  margin: auto;
 }
 
 #share-posts h4 {
@@ -341,7 +341,6 @@ header .row {
 .share-icon a { margin-right: 10px; }
 
 .share-icon a .fa-facebook {
-  color:cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -349,7 +348,6 @@ header .row {
 }
 
 .share-icon a .fa-twitter-square {
-  color:cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -357,7 +355,6 @@ header .row {
 }
 
 .share-icon a .fa-linkedin {
-  color:cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -388,13 +385,10 @@ header .row {
 .hvr-grow:focus,
 .hvr-grow:active { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 
-.copy-link-col { margin-top: -5px;}
-
 .copy-link-btn {
   background-color:transparent;
-  color: cornsilk;
   padding: 3px 10px 4px 10px;
-  border: 2px solid cornsilk;
+  border: 2px solid black;
   border-radius: 5px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -407,9 +401,6 @@ header .row {
   margin: 5px 0 0 7px;
   text-align: center;
 }
-
-
-
 
 /* PAGE
    ========================================================================== */
@@ -491,37 +482,49 @@ header .row {
 
 /* Single- Services
    ========================================================================== */
+.servicesSingleRow {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 80px;
+}
+.servicesSingleRow h1.page-header {
+  margin-top: 20px;
+}
+.servicesSingleRow .shrtDescript p {
+  padding-bottom: 25px;
+  width: 80%;
+  margin: auto;
+}
 
-
+#product-share {
+  padding-top: 10px;
+}
 
 /* product-carousel */
-.carousel-inner img { width: 100%; }
-
-#myCarousel .carousel-indicators {
-  position: static;
-  margin-top: 0px;
+.carousel-inner img { 
+  width: auto; 
+  object-fit: contain;
+  height: 500px;
 }
 
-#myCarousel .carousel-indicators > li { width: 100px; }
-
-#myCarousel .carousel-indicators li img {
-  display: block;
-  opacity: 0.5;
-}
-
-#myCarousel .carousel-indicators li.active img { opacity: 1; }
-#myCarousel .carousel-indicators li:hover img { opacity: 0.75; }
-
-/* prod-reviews */
-
-.prod-reviews {
-  width: 70%;
+.relate-post {
   margin: auto;
-  font-size: 80%;
-  color: gray;
+  text-align: center;
+  height: 240px;
 }
 
-.prod-review-img { width: 50%; }
+.relate-post img {
+  padding-bottom: 10px;
+}
+
 
 /* CATEGORY
    ========================================================================== */
