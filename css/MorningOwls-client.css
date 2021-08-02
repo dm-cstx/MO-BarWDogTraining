@@ -293,6 +293,10 @@ header .row {
 .navmenu {
   padding-right: 15%;
 }
+
+.navlink a {
+  color: white;
+}
 /* FRONT PAGE PANEL 1
    ========================================================================== */
 #fphero {
@@ -602,7 +606,6 @@ header .row {
 
 #main-footer {
 	padding: 40px 0 20px 0;
-  background-color: #3f523e;
   color: white;
 }
 

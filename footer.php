@@ -16,7 +16,7 @@
         </div>
         
     </div>
-    <footer id="main-footer" class="">
+    <footer id="main-footer" class="bg-success">
 
         <div class="container "> 
             <div class="row text-center footerRow"> 
