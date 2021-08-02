@@ -11,7 +11,7 @@ body {
   background-color: #f1f1f1;
   font-family: sans-serif;
   line-height: 1.15; /* 1 */
-	-webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 html {
@@ -24,7 +24,9 @@ html {
  * Render the `main` element consistently in IE.
  */
 
-main { display: block; }
+main {
+  display: block;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -36,20 +38,19 @@ h1 {
   margin: 0.67em 0;
 }
 
-
 *,
 *:before,
 *:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
 }
 
 img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-    border-style: none;
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  border-style: none;
 }
 
 /* Grouping content
@@ -80,19 +81,28 @@ pre {
    ========================================================================== */
 a {
   background-color: transparent;
-	color: #4d3160;
-	font-weight: bold;
-	text-decoration: none;
-    transition: 0.3s;
+  color: #4d3160;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 /*a:visited {
 	color: purple;
 }*/
 
-a:hover, a:focus, a:active { color: purple; }
-a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; }
+a:hover,
+a:focus,
+a:active {
+  color: purple;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -116,7 +126,9 @@ strong {
 /**
  * Add the correct font size in all browsers.
  */
-small { font-size: 80%; }
+small {
+  font-size: 80%;
+}
 
 /* Forms
    ========================================================================== */
@@ -143,7 +155,10 @@ textarea {
  */
 
 button,
-input { /* 1 */ overflow: visible; }
+input {
+  /* 1 */
+  overflow: visible;
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -151,7 +166,10 @@ input { /* 1 */ overflow: visible; }
  */
 
 button,
-select { /* 1 */ text-transform: none; }
+select {
+  /* 1 */
+  text-transform: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
@@ -191,7 +209,9 @@ button:-moz-focusring,
  * Correct the padding in Firefox.
  */
 
-fieldset { padding: 0.35em 0.75em 0.625em; }
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -213,13 +233,17 @@ legend {
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress { vertical-align: baseline; }
+progress {
+  vertical-align: baseline;
+}
 
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
 
-textarea { overflow: auto; }
+textarea {
+  overflow: auto;
+}
 
 /**
  * 1. Add the correct box sizing in IE 10.
@@ -269,17 +293,15 @@ textarea { overflow: auto; }
   font: inherit; /* 2 */
 }
 
-
 /* ========================================================================== */
 
 .page-header {
-  text-align:center;
+  text-align: center;
   font-weight: bold;
-  
 }
 
-.section-starter-hdr {}
-
+.section-starter-hdr {
+}
 
 /* HEADER
    ========================================================================== */
@@ -295,27 +317,48 @@ header .row {
 }
 /* FRONT PAGE PANEL 1
    ========================================================================== */
+
 #fphero {
-  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
 
-
+#fphero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../assets/img/Obedient.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}
+.fpCTA {
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+}
 /* FRONT PAGE PANEL 2
    ========================================================================== */
-
-
-
-
-
+#panel2 {
+  background-color: var(--bs-info);
+  margin: 0;
+  padding: 0;
+}
+#textcolp2 {
+  margin-top: 5%;
+}
 /* FRONT PAGE PANEL 3
    ========================================================================== */
 
-
-
 /* FRONT PAGE PANEL 4
    ========================================================================== */
-
-
 
 /* SHARE TEMPLATE
    ========================================================================== */
@@ -333,15 +376,17 @@ header .row {
 .share-icon {
   margin: 10px 0 0 0px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-    justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 83%;
 }
 
-.share-icon a { margin-right: 10px; }
+.share-icon a {
+  margin-right: 10px;
+}
 
 .share-icon a .fa-facebook {
-  color:cornsilk;
+  color: cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -349,7 +394,7 @@ header .row {
 }
 
 .share-icon a .fa-twitter-square {
-  color:cornsilk;
+  color: cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -357,7 +402,7 @@ header .row {
 }
 
 .share-icon a .fa-linkedin {
-  color:cornsilk;
+  color: cornsilk;
   font-size: 35px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -368,15 +413,15 @@ header .row {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
@@ -386,12 +431,18 @@ header .row {
 
 .hvr-grow:hover,
 .hvr-grow:focus,
-.hvr-grow:active { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-.copy-link-col { margin-top: -5px;}
+.copy-link-col {
+  margin-top: -5px;
+}
 
 .copy-link-btn {
-  background-color:transparent;
+  background-color: transparent;
   color: cornsilk;
   padding: 3px 10px 4px 10px;
   border: 2px solid cornsilk;
@@ -401,15 +452,14 @@ header .row {
   transition: 0.2s;
 }
 
-.copy-link-btn:hover { background-color: #373f48; }
+.copy-link-btn:hover {
+  background-color: #373f48;
+}
 
 #copied {
   margin: 5px 0 0 7px;
   text-align: center;
 }
-
-
-
 
 /* PAGE
    ========================================================================== */
@@ -430,15 +480,13 @@ header .row {
 #aboutPage {
   background-color: #839386;
 }
-#training  {
+#training {
   background-color: #b5beb6;
 }
 
-
-
 /* Services PAGE / Taxonomy Service
    ========================================================================== */
-  .serviceRowLeft,
+.serviceRowLeft,
 .serviceRowRight {
   width: 90%;
   margin: auto;
@@ -446,8 +494,8 @@ header .row {
 }
 
 .servicesImg {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
+}
 
 #servicesPage img {
   max-width: auto;
@@ -456,61 +504,66 @@ header .row {
 
 /* Product PAGE / Taxonomy Product
    ========================================================================== */
-  .productListSidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+.productListSidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-  .productRow {
-    padding: 3%;  
-    justify-content: center;  
-  }
+.productRow {
+  padding: 3%;
+  justify-content: center;
+}
 
-  .productCard {
-    margin: 0 20px 10px 0;
-    text-align: center;
-    width: 300px;
-  }
+.productCard {
+  margin: 0 20px 10px 0;
+  text-align: center;
+  width: 300px;
+}
 
-  .productSidebar {
-    padding-top: 3%;
-    width: 300px;
-    text-align: center;
-  }
+.productSidebar {
+  padding-top: 3%;
+  width: 300px;
+  text-align: center;
+}
 
-  /* Sidebar */
-  #sidebar-content {
-    background-color: white;
-    padding: 3%;
-  }
-  .side-title {
-    margin-bottom: 15px;
-  }
-
+/* Sidebar */
+#sidebar-content {
+  background-color: white;
+  padding: 3%;
+}
+.side-title {
+  margin-bottom: 15px;
+}
 
 /* Single- Services
    ========================================================================== */
 
-
-
 /* product-carousel */
-.carousel-inner img { width: 100%; }
+.carousel-inner img {
+  width: 100%;
+}
 
 #myCarousel .carousel-indicators {
   position: static;
   margin-top: 0px;
 }
 
-#myCarousel .carousel-indicators > li { width: 100px; }
+#myCarousel .carousel-indicators > li {
+  width: 100px;
+}
 
 #myCarousel .carousel-indicators li img {
   display: block;
   opacity: 0.5;
 }
 
-#myCarousel .carousel-indicators li.active img { opacity: 1; }
-#myCarousel .carousel-indicators li:hover img { opacity: 0.75; }
+#myCarousel .carousel-indicators li.active img {
+  opacity: 1;
+}
+#myCarousel .carousel-indicators li:hover img {
+  opacity: 0.75;
+}
 
 /* prod-reviews */
 
@@ -521,31 +574,32 @@ header .row {
   color: gray;
 }
 
-.prod-review-img { width: 50%; }
+.prod-review-img {
+  width: 50%;
+}
 
 /* CATEGORY
    ========================================================================== */
 
-#categ-comp {}
+#categ-comp {
+}
 
 /* Contact Page
    ========================================================================== */
-  .contactRow {
-    width: 90%;
-    margin: auto;
-    padding: 3% 0;
-  }
-
+.contactRow {
+  width: 90%;
+  margin: auto;
+  padding: 3% 0;
+}
 
 /* PRIVACY POLICY
    ========================================================================== */
 
-#priv-policy {}
+#priv-policy {
+}
 
-.section-starter-hdr {}
-
-
-
+.section-starter-hdr {
+}
 
 /* 404 PAGE
    ========================================================================== */
@@ -568,14 +622,16 @@ header .row {
   margin-top: 40px;
 }
 
-
 /* FOOTER
    ========================================================================== */
-#newsletter { 
-  padding: 2% 0; 
+#newsletter {
+  padding: 2% 0;
   background-color: #ceb4cd;
 }
-.es-field-wrap {display: inline-block; margin-right: 10px;}
+.es-field-wrap {
+  display: inline-block;
+  margin-right: 10px;
+}
 
 .newsletterForm input[type="text"],
 .newsletterForm input[type="email"] {
@@ -598,7 +654,7 @@ header .row {
 }
 
 #main-footer {
-	padding: 40px 0 20px 0;
+  padding: 40px 0 20px 0;
   background-color: #3f523e;
   color: white;
 }
@@ -609,21 +665,25 @@ header .row {
 }
 
 #ft-endnotes {
-	text-align: center;
-	margin: 0 auto;
-	transition: 0.3s;
-	color: white;
-	padding-top: 30px;
+  text-align: center;
+  margin: 0 auto;
+  transition: 0.3s;
+  color: white;
+  padding-top: 30px;
 }
 
-#ft-endnotes p { font-size: .9rem; }
+#ft-endnotes p {
+  font-size: 0.9rem;
+}
 
 #ft-endnotes a {
-	color: #e6ccff;
-	transition: 0.3s;
+  color: #e6ccff;
+  transition: 0.3s;
 }
 
-#ft-endnotes a:hover { color: white; }
-#priv { margin-top: -1%; }
-
-
+#ft-endnotes a:hover {
+  color: white;
+}
+#priv {
+  margin-top: -1%;
+}
