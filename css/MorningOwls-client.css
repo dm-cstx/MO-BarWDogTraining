@@ -350,12 +350,15 @@ header .row {
 }
 /* FRONT PAGE PANEL 2
    ========================================================================== */
+.fpimg1 {
+  background-color: var(--bs-primary);
+}
 #panel2 {
   background-color: var(--bs-info);
   margin: 0;
   padding: 0;
 }
-#textcolp2 {
+.textcolp2 {
   margin-top: 5%;
 }
 /* FRONT PAGE PANEL 3

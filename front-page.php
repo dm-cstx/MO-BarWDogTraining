@@ -2,10 +2,12 @@
 
 <div id="frpg-comp" class="content-area" >
 <div id="fphero"class="container-fluid d-flex align-items-end">
-    <div class="row">
-        <div class="col-4 d-flex align-items-center ms-3">
-        <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div class="row-col-1">
+        <div class="col-5 d-flex justify-content-center ms-3">
+        <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
         <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
         </div>
     </div>
@@ -104,10 +106,10 @@
 <!-- PANEL2  -->
 <div id="panel2" class="container-fluid">
     <div class="row">
-        <div class="col ms-5 d-flex justify-content-center">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
+        <div class="col ms-5 d-flex justify-content-center py-4">
+            <img class="fpimg1" src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
         </div>
-        <div id="textcolp2" class="col me-5">
+        <div id="" class="col me-5 textcolp2">
             <div class="mt-auto">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -123,10 +125,7 @@
 <!-- PANEL3  -->
 <div id="panel3" class="container-fluid">
     <div class="row">
-        <div class="col ms-5 d-flex justify-content-center">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
-        </div>
-        <div id="textcolp2" class="col me-5">
+        <div id="" class="col me-5 textcolp2">
             <div class="mt-auto">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -137,6 +136,10 @@
             <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
             </div>
         </div>
+        <div class="col ms-5 d-flex justify-content-center py-4">
+            <img class="fpimg2" src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
+        </div>
+
     </div>
 </div>
 
