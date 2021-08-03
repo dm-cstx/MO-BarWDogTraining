@@ -1,5 +1,17 @@
 <?php get_header(); ?>
-
+<div id="frpg-comp" class="content-area" >
+    <div id="pphero"class="container-fluid d-flex align-items-end">
+        <div class="row-col-1">
+            <div class="col-5 d-flex justify-content-center ms-3">
+            <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+            <button class="ppCTA ms-3" type="button">Train&nbspMe!</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="productPage">
     <h1 class="page-header">
         Products
@@ -26,7 +38,7 @@
         <div class="productSidebar col-sm-4">
             <?php get_template_part('template-parts/sidebar-product'); ?>
         </div>
-</section>
+    </section>
     
     
 </div>
