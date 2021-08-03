@@ -339,6 +339,7 @@ header .row {
   background-image: url(../assets/img/Obedient.jpg);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
 }
+
 .fpCTA {
   background-color: var(--bs-secondary);
   color: var(--bs-light);
@@ -348,6 +349,7 @@ header .row {
   font-weight: bold;
   border: none;
 }
+
 /* FRONT PAGE PANEL 2
    ========================================================================== */
 .fpimg1 {
@@ -465,6 +467,34 @@ header .row {
 
 /* About PAGE
    ========================================================================== */
+#aphero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#aphero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../assets/img/Obedient3.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}
+
+.apCTA {
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+}
+
 .sectionStripe .row {
   width: 80%;
   margin: auto;
@@ -485,6 +515,35 @@ header .row {
 
 /* Services PAGE / Taxonomy Service
    ========================================================================== */
+
+#sphero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#sphero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../assets/img/Obedient5.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}
+
+.spCTA {
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+}
+
 .serviceRowLeft,
 .serviceRowRight {
   width: 90%;
@@ -503,6 +562,35 @@ header .row {
 
 /* Product PAGE / Taxonomy Product
    ========================================================================== */
+
+#pphero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#pphero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(../assets/img/Obedient4.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+}
+
+.ppCTA {
+  background-color: var(--bs-secondary);
+  color: var(--bs-light);
+  border-radius: 9px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-weight: bold;
+  border: none;
+}
+
 .productListSidebar {
   display: flex;
   flex-direction: row;
