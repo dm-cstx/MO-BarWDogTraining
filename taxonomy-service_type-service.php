@@ -12,34 +12,44 @@
         </div>
     </div>
 </div>
-<div id="servicesPage">
-    <div class="row container serviceRowLeft align-items-center">
-        <div class="services col">
-            <h1>Title of Service</h1>
-            <p>
-                Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis.
-            </p>
-            <a>Learn More</a>
-        </div>
-        <div class="servicesImg col">
-            <img src="/wp-content/themes/MO-BarWDogTraining/assets/img/BarWlogo.jpg" alt=""  width="500" height="500">
-        </div>
-        <hr>
-    </div>
-    <div class="row container serviceRowRight align-items-center">
-        <div class="servicesImg col">
-            <img src="/wp-content/themes/MO-BarWDogTraining/assets/img/BarWlogo.jpg" alt="" width="500" height="500">
-        </div>
-        <div class="services col">
-            <h1>Title of Service</h1>
-            <p>
-                Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet gravida, orci amet iaculis aptent blandit quam accumsan donec in facilisis.
-            </p>
-            <a>Learn More</a>
-        </div>
-        <hr>
+<div id="servicesPage" class="container-fluid">
+<?php 
+if ( have_posts() ) {
+    $count = 0;
+	while ( have_posts() ) {
+        the_post();
+        ++$count;
+        if (($count % 2) == 1) { ?>
+            <div class="row">
+                <div class="col">
+                <?php 
+                the_post_thumbnail();
+                ?>
+                </div>
+                <div class="col">
+                <h2><?php the_title()?></h2>
+                <?php the_field ('details');?>
+                </div>
+            </div> 
+            <?php
+        }
+        else {  ?>
+            <div class="row">
+                <div class="col">
+                <h2><?php the_title()?></h2>
+                <?php the_field ('details'); ?>
+                </div>
+                <div class="col">
+                <?php 
+                the_post_thumbnail();
+                ?>
+                </div>                
+            </div>
+            <?php
+        } 
+    }
+}?>
 
-    </div>
 </div>
 
 
