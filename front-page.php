@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<div id="frpg-comp" class="content-area" >
+<div id="frpg-comp" class="" >
 <div id="fphero"class="container-fluid d-flex align-items-end">
     <div class="row-col-1">
         <div class="col-5 d-flex justify-content-center ms-3">
-        <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         </div>
         <div class="col-3 d-flex justify-content-center">
-        <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
+            <button class="fpCTA ms-3" type="button">Train&nbsp;Me!</button>
         </div>
     </div>
 </div>
@@ -36,7 +36,7 @@
         <?php
         }?>
     </div>
-    </section>
+</section>
     <?php
         }
         wp_reset_postdata();?> 

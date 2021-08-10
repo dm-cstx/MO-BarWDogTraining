@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="frpg-comp" class="content-area" >
+<div  >
     <div id="pphero"class="container-fluid d-flex align-items-end">
         <div class="row-col-1">
             <div class="col-5 d-flex justify-content-center ms-3">

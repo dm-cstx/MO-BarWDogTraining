@@ -544,21 +544,18 @@ header .row {
   border: none;
 }
 
-.serviceRowLeft,
-.serviceRowRight {
-  width: 90%;
-  margin: auto;
-  padding: 3% 0;
+.servicesOdd {
+  padding: 5%;
+  background-color: var(--bs-info);
+}
+.servicesEven {
+  padding: 5%;
 }
 
-.servicesImg {
-  margin-bottom: 30px;
+.servicesDetails {
+  padding-top: 2%;
 }
 
-#servicesPage img {
-  max-width: auto;
-  height: 450px;
-}
 
 /* Product PAGE / Taxonomy Product
    ========================================================================== */
