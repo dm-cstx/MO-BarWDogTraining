@@ -20,10 +20,11 @@
 
         <div class="container "> 
             <div class="row text-center footerRow"> 
-                <div id="ft-contact" class="col-sm-6 col-md-6 col-lg-4 order-lg-0 footLeft">
-                    <h3>Bar W Dog Training</h3>
-                    <p class="mb-3"><u> <a href="mailto:rileykdbs@gmail.com?subject=Website Contact.">Send Email</a></u></p>
-                    <p>(XXX) XXX-XXXX</p>
+                <div id="footLeft" class="col-sm-6 col-md-6 col-lg-4 order-lg-0 footLeft">
+                    <h3>Organizations</h3>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/CCPDT.png" alt="ISCDT Logo" width="80" height="80">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cert1.png" alt="SDC Logo" width="80" height="80">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/cert3.png" alt="CCPDT Logo" width="80" height="80">                    
                 </div>
 
                 <div class="ft-newsletter col-sm-6 col-md-6 col-lg-4 footCenter">
@@ -31,8 +32,13 @@
                 </div>
 
                 <div class="col-lg-4 footRight">
+                    <h3>Social</h3>
                     <a href="https://www.facebook.com/#" class="col footer-social-link"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/#/" class="col footer-social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/#/" class="col footer-social-link"><i class="fab fa-twitter-square"></i></a>
+                    
+                    <h3 id="contact">Contact</h3>
+                    <p class="mb-3"><u> <a href="mailto:rileykdbs@gmail.com?subject=Website Contact.">RileyKDBS@gmail.com</a></u></p>
                 </div>
             </div>
 

@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   color: #333;
   background-color: #f1f1f1;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -34,10 +34,18 @@ main {
  */
 
 h1 {
+  font-family: Bevan;
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+h2 {
+  font-family: Bevan;
+}
+
+h3 {
+  font-family: Bevan;
+}
 *,
 *:before,
 *:after {
@@ -87,7 +95,7 @@ pre {
 a {
   background-color: transparent;
   color: #4d3160;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -316,11 +324,16 @@ header .row {
 .logo {
   padding-left: 15%;
 }
+nav {
+  width: 100vw;
+}
 
 .navmenu {
   padding-right: 15%;
 }
-
+.nav-link {
+  font-family: Bevan, sans-serif;
+}
 .navlink a {
   color: white;
 }
@@ -328,9 +341,10 @@ header .row {
    ========================================================================== */
 
 #fphero {
-  height: 100vh;
+  height: 762px;
   width: 100vw;
   position: relative;
+  background-color: var(--bs-primary);
 }
 
 #fphero::before {
@@ -338,11 +352,15 @@ header .row {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 762px;
   width: 100vw;
   background-size: cover;
-  background-image: url(../assets/img/Obedient.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  background-image: url(../assets/img/Obedient5.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
+}
+
+#fphero p {
+  font-weight: bold;
 }
 
 .fpCTA {
@@ -358,15 +376,37 @@ header .row {
 /* FRONT PAGE PANEL 2
    ========================================================================== */
 .fpimg1 {
-  background-color: var(--bs-primary);
+  height: 400px;
+  width: auto;
+  margin: 4% 4%;
+}
+.fpimg2 {
+  height: 400px;
+  width: auto;
+  margin: 1% 1%;
 }
 #panel2 {
   background-color: var(--bs-info);
   margin: 0;
   padding: 0;
+  width: 100vw;
+}
+
+#panel2 p {
+  font-weight: bold;
 }
 .textcolp2 {
-  margin-top: 5%;
+  margin-top: 0;
+}
+
+#panel3 {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  padding-left: 4%;
+}
+#panel3 p {
+  font-weight: bold;
 }
 /* FRONT PAGE PANEL 3
    ========================================================================== */
@@ -736,6 +776,7 @@ header .row {
   padding: 2% 0;
   background-color: #ceb4cd;
 }
+
 .es-field-wrap {
   display: inline-block;
   margin-right: 10px;
@@ -763,20 +804,28 @@ header .row {
 
 #main-footer {
   padding: 40px 0 20px 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.555);
+}
+.footLeft h3 {
+  margin-bottom: 8%;
 }
 
+.footLeft img {
+  margin: 0 3%;
+}
 .footRight a {
   font-size: 3rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.555);
+  margin: 3% 3%;
 }
-
+.footRight p a {
+  font-size: 1.25rem;
+}
 #ft-endnotes {
   text-align: center;
   margin: 0 auto;
   transition: 0.3s;
-  color: white;
-  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.555);
 }
 
 #ft-endnotes p {
@@ -791,6 +840,9 @@ header .row {
 #ft-endnotes a:hover {
   color: white;
 }
-#priv {
-  margin-top: -1%;
+#priv a {
+  color: rgba(255, 255, 255, 0.555);
+}
+#contact {
+  margin-top: 10%;
 }
