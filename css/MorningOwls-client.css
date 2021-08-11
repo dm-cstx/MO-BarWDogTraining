@@ -546,7 +546,8 @@ header .row {
   border: none;
 }
 .servicesRow,
-.productListSidebar {
+.productListSidebar,
+.contactRow {
   max-width: 1400px;
   margin: auto;
 }
