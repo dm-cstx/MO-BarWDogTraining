@@ -2,13 +2,16 @@
 
 <div id="frpg-comp" class="content-area" >
 <div id="fphero"class="container-fluid d-flex align-items-end">
-    <div class="row-col-1">
-        <div class="col-5 d-flex justify-content-center ms-3">
-        <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+    <div class="row-col-1 ms-4 mb-5">
+        <div class="col-4 d-flex align-items-end ms-3">
+            <div>
+                <h3>Impulse Statement</h3>
+                <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
         </div>
         <div class="col-3 d-flex justify-content-center">
-        <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
+        <button class="fpCTA ms-3" type="button">Train!</button>
         </div>
     </div>
 </div>
@@ -107,17 +110,21 @@
 <div id="panel2" class="container-fluid">
     <div class="row">
         <div class="col ms-5 d-flex justify-content-center py-4">
-            <img class="fpimg1" src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
+            <img class="fpimg1" src="<?php echo get_template_directory_uri();?>/assets/img/dogsinline.jpg" alt="Picture of..." width="300" height="300">
         </div>
-        <div id="" class="col me-5 textcolp2">
-            <div class="mt-auto">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            </p>
-            </div>
-            <br>
-            <div class="d-flex justify-content-center">
-            <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
+        <div id="" class="col me-5 textcolp2 d-flex align-items-center">
+            <div class="">
+                <div class="mt-auto">
+                    <h3 class="text-center">About Dog Training</h3>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                </div>
+            
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button class="fpCTA ms-3" type="button">Services</button>
+                </div>
             </div>
         </div>
     </div>
@@ -125,19 +132,24 @@
 <!-- PANEL3  -->
 <div id="panel3" class="container-fluid">
     <div class="row">
-        <div id="" class="col me-5 textcolp2">
-            <div class="mt-auto">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            </p>
-            </div>
-            <br>
-            <div class="d-flex justify-content-center">
-            <button class="fpCTA ms-3" type="button">Train&nbspMe!</button>
+        <div id="" class="col textcolp2 d-flex align-items-center">
+            <div class="">
+                <div class="mt-auto">
+                    <h3 class="text-center">About Dog Training</h3>
+                    <p class="text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                </div>
+            
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button class="fpCTA ms-3" type="button">About</button>
+                </div>
             </div>
         </div>
+
         <div class="col ms-5 d-flex justify-content-center py-4">
-            <img class="fpimg2" src="<?php echo get_template_directory_uri();?>/assets/img/BarWlogo.png" alt="Picture of..." width="300" height="300">
+            <img class="fpimg2" src="<?php echo get_template_directory_uri();?>/assets/img/puppy.png" alt="Picture of..." width="300" height="300">
         </div>
 
     </div>
