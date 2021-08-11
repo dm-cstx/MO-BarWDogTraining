@@ -61,6 +61,11 @@ img {
   border-style: none;
 }
 
+.perfect-pict {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 /* Grouping content
    ========================================================================== */
 
@@ -536,7 +541,7 @@ nav {
 }
 
 .sectionStripe .row {
-  width: 80%;
+  max-width: 1200px;
   margin: auto;
   padding: 20px 0;
   justify-content: center;
@@ -546,11 +551,8 @@ nav {
   height: auto;
 }
 
-#aboutPage {
-  background-color: #839386;
-}
 #training {
-  background-color: #b5beb6;
+  background-color: var(--bs-info);
 }
 
 /* Services PAGE / Taxonomy Service
@@ -583,22 +585,25 @@ nav {
   font-weight: bold;
   border: none;
 }
-
-.serviceRowLeft,
-.serviceRowRight {
-  width: 90%;
+.servicesRow,
+.productListSidebar,
+.contactRow {
+  max-width: 1400px;
   margin: auto;
+}
+.servicesOdd {
+  margin-top: 5%;
   padding: 3% 0;
+  background-color: var(--bs-info);
+}
+.servicesEven {
+  padding: 5%;
 }
 
-.servicesImg {
-  margin-bottom: 30px;
+.servicesDetails {
+  padding-top: 2%;
 }
 
-#servicesPage img {
-  max-width: auto;
-  height: 450px;
-}
 
 /* Product PAGE / Taxonomy Product
    ========================================================================== */
@@ -632,14 +637,48 @@ nav {
 }
 
 .productListSidebar {
+  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .productRow {
-  padding: 3%;
   justify-content: center;
+}
+
+#productPage .productCard {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.productCard {
+  margin: 0 3% 3% 0;
+  width: 300px;
+  text-align: center;
+}
+
+
+.card-img-top {
+  height: 300px;
+}
+
+.productBody {
+  flex-direction: column;
+}
+
+.card-text { padding-top: 3%;}
+
+.productSidebar {
+  width: 300px;
+  margin: 0 auto auto auto;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* Product Sidebar */
+#sidebarProduct .sideNote {
+  padding-top: 3%;
 }
 
 /* Single- Services

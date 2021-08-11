@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="frpg-comp" class="content-area" >
+<div id="frpg-comp" class="" >
 <div id="fphero"class="container-fluid d-flex align-items-end">
     <div class="row-col-1 ms-4 mb-5">
         <div class="col-4 d-flex align-items-end ms-3">
@@ -12,6 +12,7 @@
         </div>
         <div class="col-3 d-flex justify-content-center">
         <button class="fpCTA ms-3" type="button">Train!</button>
+
         </div>
     </div>
 </div>
@@ -39,7 +40,7 @@
         <?php
         }?>
     </div>
-    </section>
+</section>
     <?php
         }
         wp_reset_postdata();?> 

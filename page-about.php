@@ -1,5 +1,5 @@
 <?php  get_header(); ?>
-<div id="frpg-comp" class="content-area" >
+<div  >
 <div id="aphero"class="container-fluid d-flex align-items-end">
     <div class="row-col-1">
         <div class="col-5 d-flex justify-content-center ms-3">
@@ -15,7 +15,7 @@
     <section id="beginning" class="sectionStripe stripeLeft ">
         <div class="row align-items-center">
             <div class="stripeImg col-md-6 col-lg-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="" class="perfect-pict img-fluid">
             </div>
             <div class="stripeTxt col-md-6 col-lg-8">
                 <h2>How It All Began</h2>
@@ -35,14 +35,14 @@
                 </p>
             </div>
             <div class="stripeImg col-md-6 col-lg-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="" class="perfect-pict img-fluid">
             </div>
         </div>
     </section>
     <section id="owner" class="sectionStripe col">
         <div class="row align-items-center">
             <div class="stripeImg col-md-6 col-lg-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/BarWlogo.jpg" alt="" class="perfect-pict img-fluid">
             </div>
             <div class="stripeTxt col-md-6 col-lg-8">
                 <h2>Riley Megee - Owner</h2>
