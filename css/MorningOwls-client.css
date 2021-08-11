@@ -501,7 +501,7 @@ header .row {
 }
 
 .sectionStripe .row {
-  width: 80%;
+  max-width: 1200px;
   margin: auto;
   padding: 20px 0;
   justify-content: center;
@@ -511,11 +511,8 @@ header .row {
   height: auto;
 }
 
-#aboutPage {
-  background-color: #839386;
-}
 #training {
-  background-color: #b5beb6;
+  background-color: var(--bs-info);
 }
 
 /* Services PAGE / Taxonomy Service
