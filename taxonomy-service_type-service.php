@@ -1,21 +1,13 @@
 <?php get_header(); ?>
 <div  >
     <div id="sphero"class="container-fluid d-flex align-items-end">
-        <div class="row-col-1">
-            <div class="col-5 d-flex justify-content-center ms-3">
-            <p class="align-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            </div>
-            <div class="col-3 d-flex justify-content-center">
-            <button class="spCTA ms-3" type="button">Train&nbsp;Me!</button>
-            </div>
-        </div>
+        <h1 class="page-header triHeader">
+        Services
+        </h1>
     </div>
 </div>
 <div id="servicesPage" class="container-fluid">
-    <h1 class="page-header">
-        Services
-    </h1>
+    
     <?php 
     if ( have_posts() ) {
         $count = 0;
