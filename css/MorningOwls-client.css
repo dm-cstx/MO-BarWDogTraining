@@ -624,7 +624,6 @@ nav {
   padding-top: 2%;
 }
 
-
 /* Product PAGE / Taxonomy Product
    ========================================================================== */
 
@@ -645,7 +644,7 @@ nav {
   height: 100%;
   background-position: right top;
   background-repeat: no-repeat;
-  background-image: url(../assets/img/dog_treats_fin.jpg);
+  background-image: url(../assets/img/dog_treats2_fin.jpg);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
 }
 
@@ -681,7 +680,6 @@ nav {
   text-align: center;
 }
 
-
 .card-img-top {
   height: 300px;
 }
@@ -690,7 +688,9 @@ nav {
   flex-direction: column;
 }
 
-.card-text { padding-top: 3%;}
+.card-text {
+  padding-top: 3%;
+}
 
 .productSidebar {
   width: 300px;
