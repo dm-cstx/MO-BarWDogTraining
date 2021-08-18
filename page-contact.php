@@ -10,8 +10,8 @@
             <p>(XXX) XXX-XXXX</p>
             <?php echo do_shortcode('[wpforms id="17"]'); ?>
         </div>
-        <div class="contactImg col-lg">
-            <img src="/wp-content/themes/MO-BarWDogTraining/assets/img/BarWlogo.jpg" alt="">
+        <div class="col">
+            <img class="contactImg" src="/wp-content/themes/MO-BarWDogTraining/assets/img/happy_dog_fin.jpg" alt="">
         </div>
     </div>
 </div>

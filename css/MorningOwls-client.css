@@ -341,21 +341,23 @@ nav {
    ========================================================================== */
 
 #fphero {
-  height: 762px;
+  height: 45vw;
   width: 100vw;
   position: relative;
   background-color: var(--bs-primary);
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 #fphero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 762px;
-  width: 100vw;
-  background-size: cover;
-  background-image: url(../assets/img/Obedient5.jpg);
+  background-size: cover, cover;
+  width: 100%;
+  height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/BarW_fp_hero.jpg);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
 }
 
@@ -513,22 +515,24 @@ nav {
 /* About PAGE
    ========================================================================== */
 #aphero {
-  height: 100vh;
+  height: 45vw;
   width: 100vw;
   position: relative;
-  background-color: var(--bs-primary);
+  background-color: var(--bs-info);
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 #aphero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-image: url(../assets/img/Obedient3.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  background-size: cover, cover;
+  width: 100%;
+  height: 100%;
+  background-position: left 35%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/dog_horse_fin.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
 }
 
 .apCTA {
@@ -562,22 +566,24 @@ nav {
    ========================================================================== */
 
 #sphero {
-  height: 100vh;
+  height: 45vw;
   width: 100vw;
   position: relative;
-  background-color: var(--bs-info);
+  background-color: var(--bs-primary);
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 #sphero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-image: url(../assets/img/Obedient5.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  background-size: cover, cover;
+  width: 100%;
+  height: 100%;
+  background-position: left 65%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/dog_bath_fin.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
 }
 
 .triHeader {
@@ -623,21 +629,24 @@ nav {
    ========================================================================== */
 
 #pphero {
-  height: 100vh;
+  height: 45vw;
   width: 100vw;
   position: relative;
+  background-color: var(--bs-primary);
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 #pphero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-image: url(../assets/img/Obedient4.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  background-size: cover, cover;
+  width: 100%;
+  height: 100%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/dog_treats_fin.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55%);
 }
 
 .ppCTA {
@@ -753,7 +762,9 @@ nav {
   margin: auto;
   padding: 3% 0;
 }
-
+.contactImg {
+  border-radius: 50%;
+}
 /* PRIVACY POLICY
    ========================================================================== */
 

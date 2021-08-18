@@ -150,7 +150,7 @@
         </div>
 
         <div class="col ms-5 d-flex justify-content-center py-4">
-            <img class="fpimg2" src="<?php echo get_template_directory_uri();?>/assets/img/puppy.png" alt="Picture of..." width="300" height="300">
+            <img class="fpimg2" src="<?php echo get_template_directory_uri();?>/assets/img/Riley_pup1.png" alt="Picture of..." width="300" height="300">
         </div>
 
     </div>
